@@ -17,6 +17,9 @@ The Organs ontology module of the [Polifonia ontology network](https://github.co
 | **CQ9**  | Which resources mention an organ?                                    |
 | **CQ10** | Which resources mention an organ builder?                            |
 
+## Ontology diagram
+
+<img width="824" alt="mp-performers" src="https://github.com/polifonia-project/organs-ontology/blob/2f14a1504b737d5fd403636275a829c25001ac1a/Organ%20ontology.jpg">
 
 ## Imported ontologies
 
