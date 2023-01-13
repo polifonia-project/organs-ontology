@@ -1,6 +1,14 @@
 # Organs Ontology
-The Organs ontology module of the [Polifonia ontology network](https://github.com/polifonia-project/ontology-network) provides a representation of the organs instrument. 
+The Organs ontology module of the [Polifonia ontology network](https://github.com/polifonia-project/ontology-network) represents concepts and relationships that describe pipe organs. The ontology describes the organ in a two-fold way:
+- as a musical instrument that consists of parts 
+- as a focal point of a project that describes the historical changes of the organ throughout the years. 
 
+## Relevant statistics
+
+- Number of classes:  31
+- Number of object properties: 13
+- Number of datatype properties: 7
+- Number of logical axioms: 49
 
 ## Competency questions addressed by this ontology module
 
@@ -8,24 +16,76 @@ The Organs ontology module of the [Polifonia ontology network](https://github.co
 | -------- | -------------------------------------------------------------------- |
 | **CQ1**  | Who built and/or renovated an organ?                                 |
 | **CQ2**  | What was the disposition of the organ at a specific point in time?   |
-| **CQ3**  | What are the sources of the project that an organ is involved in?    |
-| **CQ4**  | What are the original parts of the organ?                            |
-| **CQ5**  | Where are the original parts of an organ?                            |
-| **CQ6**  | Where is an organ located originally?                                |
-| **CQ7**  | When is an organ moved to another location?                          |
-| **CQ8**  | Why is an organ moved to another location?                           |
+| **CQ3**  | What are the original parts of the organ?                            |
+| **CQ4**  | Where are the original parts of an organ?                            |
+| **CQ5**  | Where is an organ located originally?                                |
+| **CQ6**  | When is an organ moved to another location?                          |
+| **CQ7**  | Why is an organ moved to another location?                           |
+
+## Competency questions that will be addressed by this ontology module
+
+| **ID**   | **Competency question**                                              |
+| -------- | -------------------------------------------------------------------- |
+| **CQ8**  | What are the sources of the project that an organ is involved in?    |
 | **CQ9**  | Which resources mention an organ?                                    |
 | **CQ10** | Which resources mention an organ builder?                            |
 
+
+## Examples of SPARQL queries addressed by the module
+
+- Who built an organ? 
+```
+PREFIX organs: <https://w3id.org/arco/ontology/organs/>
+PREFIX core: <https://w3id.org/arco/ontology/core/>
+
+SELECT DISTINCT ?agent
+WHERE { 
+?organ core:isDescribedBy ?project .
+?project core:hasAgentRole ?agentRole .
+?agentRole core:hasRole ?role .
+
+FILTER(str(?role)='builder')
+}
+```
+
+- What was the disposition of the organ at a specific point in time?
+```
+PREFIX organs: <https://w3id.org/arco/ontology/organs/>
+PREFIX core: <https://w3id.org/arco/ontology/core/>
+
+SELECT DISTINCT ?partHood ?timeinterval
+WHERE { 
+?organ core:isWholeincludedIn ?parthood . 
+?parthood a core:Parthood .
+?parthood core:hasTimeInterval ?timeInterval .
+
+```
+
+- Where is an organ located originally?  
+```
+PREFIX organs: <https://w3id.org/arco/ontology/organs/>
+PREFIX core: <https://w3id.org/arco/ontology/core/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?place
+WHERE { 
+?organ core:isDescribedBy ?project .
+?project core:hasPlace ?place .
+?place a core:PhysicalPlace . 
+?project core:isFirstProject ?isFirstProject .
+FILTER(xsd:Boolean(?isFirstProject) = True)
+```
+
 ## Ontology diagram
 
-<img width="824" alt="mp-performers" src="https://github.com/polifonia-project/organs-ontology/blob/2f14a1504b737d5fd403636275a829c25001ac1a/Organ%20ontology.jpg">
+<img width="824" alt="mp-performers" src="https://github.com/polifonia-project/organs-ontology/blob/8ac54b12bb512033e041008a362e5c6c1411a676/organs-ontology-diagram.jpg">
 
 ## Imported ontologies
 
 ### Imported from the Polifonia Ontology Network
 
 - [Core Module](https://github.com/polifonia-project/core-ontology/)
-- [Musical Features Module](https://github.com/polifonia-project/musical-features-ontology/)
-- [Instrument Module](https://github.com/polifonia-project/instrument-ontology/)
+
+## Licence 
+CC BY
 
