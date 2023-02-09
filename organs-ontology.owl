@@ -93,7 +93,7 @@
     <!-- https://w3id.org/arco/ontology/core/isWholeIncludedIn -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/isWholeIncludedIn">
-        <rdfs:comment>is whole included in</rdfs:comment>
+        <rdfs:label xml:lang="en">is whole included in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -102,7 +102,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/core/hasAgentRole">
         <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/organs/isAgentRoleOf"/>
-        <rdfs:comment>has agent role</rdfs:comment>
+        <rdfs:label>has agent role</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -111,7 +111,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/core/hasPart">
         <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/organs/isPartOf"/>
-        <rdfs:comment>has part</rdfs:comment>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -120,7 +120,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/core/hasTimeInterval">
         <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/organs/isTimeIntervalOf"/>
-        <rdfs:comment>has time interval</rdfs:comment>
+        <rdfs:label>has time interval</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -131,7 +131,7 @@
         <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/organs/isConsoleLocationOf"/>
         <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/organs/Action"/>
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/organs/ConsoleLocation"/>
-        <rdfs:comment xml:lang="en">has console location</rdfs:comment>
+        <rdfs:label xml:lang="en">has console location</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -139,7 +139,7 @@
     <!-- https://w3id.org/polifonia/ontology/organs/isAgentRoleOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/organs/isAgentRoleOf">
-        <rdfs:comment>is agent role of</rdfs:comment>
+        <rdfs:label>is agent role of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -147,7 +147,7 @@
     <!-- https://w3id.org/polifonia/ontology/organs/isConsoleLocationOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/organs/isConsoleLocationOf">
-        <rdfs:comment xml:lang="en">is console location of</rdfs:comment>
+        <rdfs:label xml:lang="en">is console location of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -249,7 +249,7 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/polifonia/ontology/organs/organDictionaryID">
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:comment>organ dictionary ID</rdfs:comment>
+        <rdfs:label>organ dictionary ID</rdfs:label>
     </owl:DatatypeProperty>
     
 
