@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/polifonia/ontology/organs/"
      xml:base="https://w3id.org/polifonia/ontology/organs/"
-     xmlns:o="https://w3id.org/polifonia/ontology/organs/0.1/"
+     xmlns:organs="https://w3id.org/polifonia/ontology/organs/0.1/"
      xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
