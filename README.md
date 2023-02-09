@@ -78,7 +78,7 @@ FILTER(xsd:Boolean(?isFirstProject) = True)
 
 ## Ontology diagram
 
-<img width="824" alt="mp-performers" src="https://github.com/polifonia-project/organs-ontology/blob/8ac54b12bb512033e041008a362e5c6c1411a676/organs-ontology-diagram.jpg">
+<img width="824" alt="mp-performers" src="https://github.com/polifonia-project/organs-ontology/blob/714f71e6dd55d169a4c53d89d810a0bc1301aaf1/organs.jpg">
 
 ## Imported ontologies
 
