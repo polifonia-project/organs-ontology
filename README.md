@@ -5,10 +5,10 @@ The Organs ontology module of the [Polifonia ontology network](https://github.co
 
 ## Relevant statistics
 
-- Number of classes:  31
-- Number of object properties: 13
-- Number of datatype properties: 7
-- Number of logical axioms: 49
+- Number of classes:  33
+- Number of object properties: 22
+- Number of datatype properties: 12
+- Number of logical axioms: 73
 
 ## Competency questions addressed by this ontology module
 
@@ -78,7 +78,7 @@ FILTER(xsd:Boolean(?isFirstProject) = True)
 
 ## Ontology diagram
 
-<img width="824" alt="mp-performers" src="https://github.com/polifonia-project/organs-ontology/blob/714f71e6dd55d169a4c53d89d810a0bc1301aaf1/organs.jpg">
+<img width="824" alt="mp-performers" src="https://github.com/polifonia-project/organs-ontology/blob/ac39b117029c17cb7952f3a0a5a64a3f2940a762/organs.jpg">
 
 ## Imported ontologies
 
