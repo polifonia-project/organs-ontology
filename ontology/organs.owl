@@ -10,9 +10,20 @@
      xmlns:core="https://w3id.org/polifonia/ontology/core/0.1#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/organs/">
-        <owl:versionIRI rdf:resource="https://w3id.org/polifonia/ontology/organs/0.1/"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/polifonia/ontology/organs/1.0/"/>
+        <dc:creator xml:lang="en">Fiorela Ciroku</dc:creator>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <cc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:comment>The Organs ontology module of the Polifonia Ontology Network represents concepts and relationships that describe pipe organs.</rdfs:comment>
-        <rdfs:label>Organs ontology</rdfs:label>
+        <rdfs:label>Organs Ontology</rdfs:label>
+        <dc:title xml:lang="en">Organs Ontology</dc:title>
+        <rdfs:description>The Organs ontology module of the Polifonia Ontology Network represents concepts and relationships that describe pipe organs.</rdfs:description>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+        <terms:modified>"2023-02-10"^^xsd:date</terms:modified>
+        <terms:issued>"2023-02-10"^^xsd:date</terms:issued>
+        <vann:preferredNamespacePrefix>organs:</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/polifonia/ontology/organs/</vann:preferredNamespaceUri>
     </owl:Ontology>
     
 
