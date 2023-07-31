@@ -1,7 +1,16 @@
 # Organs Ontology
+An ontology to describe organs, their properties and their evolution.
+
+[![DOI](https://zenodo.org/badge/372536364.svg)](https://zenodo.org/badge/latestdoi/372536364)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+> 🔗 Ontology URI: [https://w3id.org/polifonia/ontology/organs/](https://w3id.org/polifonia/ontology/organs/)
+
 The Organs ontology module of the [Polifonia ontology network](https://github.com/polifonia-project/ontology-network) represents concepts and relationships that describe pipe organs. The ontology describes the organ in a two-fold way:
 - as a musical instrument that consists of parts 
-- as a focal point of a project that describes the historical changes of the organ throughout the years. 
+- as a focal point of a project that describes the historical changes of the organ throughout the years.
+
+![overview](diagrams/organs.jpg)
 
 ## Relevant statistics
 
@@ -76,9 +85,6 @@ WHERE {
 FILTER(xsd:Boolean(?isFirstProject) = True)
 ```
 
-## Ontology diagram
-
-<img width="824" alt="mp-performers" src="https://github.com/polifonia-project/organs-ontology/blob/ac39b117029c17cb7952f3a0a5a64a3f2940a762/organs.jpg">
 
 ## Imported ontologies
 
