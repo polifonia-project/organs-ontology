@@ -8,6 +8,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:core="https://w3id.org/polifonia/ontology/core/0.1#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/organs/">
         <owl:versionIRI rdf:resource="https://w3id.org/polifonia/ontology/organs/1.0/"/>
